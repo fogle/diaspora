@@ -1,0 +1,15 @@
+before_test:
+  - bundle install --with postgresql
+  - cp config/database.yml.example config/database.yml
+  - cp config/diaspora.yml.example config/diaspora.yml
+  - rails db:create
+  - rails db:migrate
+  - rails assets:precompile
+dependencies:
+  idn: latest
+  cmake: latest
+  yarn: latest
+  postgresql: latest
+  phantomjs: latest
+  imagemagick: latest
+  ruby: 2.4.5
