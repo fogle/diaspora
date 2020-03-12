@@ -13,3 +13,4 @@ dependencies:
   phantomjs: latest
   imagemagick: latest
   ruby: 2.4.5
+
